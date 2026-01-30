@@ -18,14 +18,13 @@ function App() {
       case 'game':
         return <GameScreen
           onVictory={() => setCurrentScreen('victory')}
-          onBack={() => setCurrentScreen('menu')}
           onDefeat={(reason) => {
             setDefeatReason(reason);
             setCurrentScreen('defeat');
           }}
         />
       case 'victory':
-        return <VictoryScreen onContinue={() => setCurrentScreen('menu')} onBackToMenu={() => setCurrentScreen('menu')} />
+        return <VictoryScreen onContinue={() => setCurrentScreen('menu')} />
       case 'defeat':
         return <DefeatScreen
           defeatReason={defeatReason}

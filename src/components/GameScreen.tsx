@@ -1,17 +1,16 @@
 import { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { GAME_CONFIG, COLORS, SAMPLE_WORDS, MONSTERS } from '@/constants';
+import { COLORS, SAMPLE_WORDS, MONSTERS } from '@/constants';
 import { generateSimpleMatrix } from '@/utils/simpleMatrixGenerator';
 import { calculateDamage } from '@/utils/gameLogic';
-import type { LetterCell, MonsterState, CurrentWordState } from '@/types';
+import type { LetterCell, MonsterState, CurrentWordState, Word } from '@/types';
 
 interface GameScreenProps {
   onVictory: () => void;
-  onBack: () => void;
   onDefeat: (reason: 'timeout' | 'tooManySkips') => void; // 失败回调，传递失败原因
 }
 
-export default function GameScreen({ onVictory, onBack, onDefeat }: GameScreenProps) {
+export default function GameScreen({ onVictory, onDefeat }: GameScreenProps) {
   // 游戏状态
   const [monster, setMonster] = useState<MonsterState>({
     hp: 100,
@@ -27,10 +26,9 @@ export default function GameScreen({ onVictory, onBack, onDefeat }: GameScreenPr
   const [wordList] = useState(SAMPLE_WORDS);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [combo, setCombo] = useState(0);
-  const [maxCombo, setMaxCombo] = useState(0);
 
   // 跳过的单词列表
-  const [skippedWords, setSkippedWords] = useState<typeof SAMPLE_WORDS>([]);
+  const [skippedWords, setSkippedWords] = useState<Word[]>([]);
 
   // 当前单词状态
   const [currentWord, setCurrentWord] = useState<CurrentWordState>({
@@ -177,7 +175,6 @@ export default function GameScreen({ onVictory, onBack, onDefeat }: GameScreenPr
     // 更新连击
     const newCombo = combo + 1;
     setCombo(newCombo);
-    setMaxCombo(prev => Math.max(prev, newCombo));
 
     // 计算伤害
     const damage = calculateDamage(newCombo);
@@ -294,7 +291,6 @@ export default function GameScreen({ onVictory, onBack, onDefeat }: GameScreenPr
     });
     setCurrentWordIndex(0);
     setCombo(0);
-    setMaxCombo(0);
     setWordTimeLeft(60);
     setIsTimeUp(false);
     setShowHint(false);
@@ -520,7 +516,7 @@ export default function GameScreen({ onVictory, onBack, onDefeat }: GameScreenPr
         <div className="flex flex-col items-center gap-3">
           {/* 中文提示 */}
           <div className="flex items-center gap-3">
-            <span className="text-4xl">{currentWord.word.emoji || '📝'}</span>
+            <span className="text-4xl">{currentWord.word.imageUrl || '📝'}</span>
             <div className="flex flex-col">
               <span className="text-sm font-medium text-gray-500">请找出</span>
               <span className="text-2xl font-bold text-gray-800">{currentWord.word.chinese}</span>
@@ -529,7 +525,7 @@ export default function GameScreen({ onVictory, onBack, onDefeat }: GameScreenPr
 
           {/* 字母空格 */}
           <div className="flex gap-2 flex-wrap justify-center">
-            {currentWord.filledLetters.map((letter, index) => (
+            {currentWord.filledLetters.map((letter: string | null, index: number) => (
               <motion.div
                 key={index}
                 initial={{ scale: 0 }}
@@ -597,7 +593,7 @@ export default function GameScreen({ onVictory, onBack, onDefeat }: GameScreenPr
                 animate={{ scale: 1, opacity: 1 }}
                 className="flex items-center gap-1.5 bg-gray-100 hover:bg-gray-200 rounded-xl px-3 py-1.5 border border-gray-200"
               >
-                <span className="text-lg">{word.emoji || '📝'}</span>
+                <span className="text-lg">{word.imageUrl || '📝'}</span>
                 <span className="text-xs font-bold text-gray-600">{word.chinese}</span>
               </motion.div>
             ))}

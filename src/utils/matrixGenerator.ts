@@ -7,7 +7,6 @@ export function placeWordInMatrix(
   attempts: number = 100
 ): boolean {
   const size = matrix.length;
-  const wordLength = word.english.length;
 
   // 支持的方向：横向、纵向、对角线
   const directions = [

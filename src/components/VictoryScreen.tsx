@@ -2,10 +2,9 @@ import { motion } from 'framer-motion';
 
 interface VictoryScreenProps {
   onContinue: () => void;
-  onBackToMenu: () => void;
 }
 
-export default function VictoryScreen({ onContinue, onBackToMenu }: VictoryScreenProps) {
+export default function VictoryScreen({ onContinue }: VictoryScreenProps) {
   return (
     <div className="w-full max-w-md mx-auto bg-white h-screen flex flex-col">
       {/* 胜利标题区域 */}
