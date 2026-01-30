@@ -1,0 +1,2291 @@
+{
+  "version": "2.6",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": -3721,
+      "y": -3156,
+      "name": "Frame",
+      "clip": true,
+      "width": 7489,
+      "height": 6994,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "WIwv5",
+      "x": 0,
+      "y": 0,
+      "name": "主菜单界面",
+      "clip": true,
+      "width": 402,
+      "height": 874,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "BIy1M",
+          "name": "顶部装饰",
+          "clip": true,
+          "width": "fill_container",
+          "height": 280,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#8B5CF6",
+                "position": 0
+              },
+              {
+                "color": "#A78BFA",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "tmgWE",
+              "name": "游戏图标区域",
+              "width": 120,
+              "height": 120,
+              "fill": "#FFFFFF",
+              "cornerRadius": 30,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000020",
+                "offset": {
+                  "x": 0,
+                  "y": 8
+                },
+                "blur": 24
+              },
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "69siq",
+                  "name": "游戏图标",
+                  "fill": "#8B5CF6",
+                  "content": "🛡️",
+                  "textAlign": "center",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Inter",
+                  "fontSize": 64,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "5QK82",
+              "name": "游戏标题",
+              "fill": "#FFFFFF",
+              "content": "单词小英雄",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 32,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "IwSak",
+              "name": "游戏副标题",
+              "fill": "#FFFFFFB3",
+              "content": "⚔️ 怪兽大作战 ⚔️",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 18,
+              "fontWeight": "semibold"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Lcw1O",
+          "name": "内容区域",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            40,
+            24,
+            32,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "oLPZs",
+              "name": "开始游戏按钮",
+              "width": "fill_container",
+              "height": 64,
+              "fill": "#8B5CF6",
+              "cornerRadius": 32,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#8B5CF640",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 12
+              },
+              "gap": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XbvuZ",
+                  "name": "开始游戏",
+                  "fill": "#FFFFFF",
+                  "content": "▶️ 开始游戏",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 22,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ltw8e",
+              "name": "按钮行",
+              "width": "fill_container",
+              "gap": 12,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SC2rb",
+                  "name": "图鉴按钮",
+                  "width": "fill_container",
+                  "height": 56,
+                  "fill": "#4FC3F7",
+                  "cornerRadius": 24,
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qeNsS",
+                      "name": "图鉴",
+                      "fill": "#FFFFFF",
+                      "content": "📚 图鉴",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 16,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mf55k",
+                  "name": "设置按钮",
+                  "width": "fill_container",
+                  "height": 56,
+                  "fill": "#E4E4E7",
+                  "cornerRadius": 24,
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fN97v",
+                      "name": "设置",
+                      "fill": "#71717A",
+                      "content": "⚙️ 设置",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 16,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "cc5U4",
+              "name": "关卡选择按钮",
+              "width": "fill_container",
+              "height": 56,
+              "fill": "#F472B6",
+              "cornerRadius": 24,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#F472B640",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "blur": 8
+              },
+              "gap": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "B4kEU",
+                  "name": "关卡选择",
+                  "fill": "#FFFFFF",
+                  "content": "🗺️ 关卡选择",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 16,
+                  "fontWeight": "semibold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zmdGm",
+              "name": "进度卡片",
+              "width": "fill_container",
+              "fill": "#F4F4F5",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dDIuR",
+                  "name": "当前关卡",
+                  "fill": "#18181B",
+                  "content": "当前关卡: 森林冒险 1-3",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 15,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "9CoWk",
+                  "name": "星级",
+                  "fill": "#18181B",
+                  "content": "⭐⭐⭐☆☆",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "v7Ly1",
+      "x": 450,
+      "y": 0,
+      "name": "游戏主界面",
+      "clip": true,
+      "width": 402,
+      "height": 874,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "FL5sl",
+          "name": "战斗区域",
+          "clip": true,
+          "width": "fill_container",
+          "height": 280,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#E3F2FD",
+                "position": 0
+              },
+              {
+                "color": "#90CAF9",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "4KZq1",
+              "name": "血条容器",
+              "width": 200,
+              "height": 32,
+              "fill": "#00000030",
+              "cornerRadius": 16,
+              "padding": 4,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "L4oQb",
+                  "name": "血条填充",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FF5252",
+                  "cornerRadius": 12
+                },
+                {
+                  "type": "text",
+                  "id": "Oai14",
+                  "name": "血量文字",
+                  "fill": "#FFFFFF",
+                  "content": "80/100",
+                  "textAlign": "center",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CPhMz",
+              "name": "怪兽容器",
+              "width": 120,
+              "height": 120,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "YQuIi",
+                  "name": "怪兽",
+                  "fill": "#18181B",
+                  "content": "👾",
+                  "textAlign": "center",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Inter",
+                  "fontSize": 96,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "1uadG",
+              "name": "玩家勇士",
+              "width": 60,
+              "height": 60,
+              "fill": "#8B5CF6",
+              "cornerRadius": 30,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#8B5CF640",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 12
+              },
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "TGIgJ",
+                  "name": "勇士",
+                  "fill": "#FFFFFF",
+                  "content": "🧙‍♂️",
+                  "textAlign": "center",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Inter",
+                  "fontSize": 40,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "yXDDS",
+              "name": "攻击效果",
+              "fill": "#FFD700",
+              "content": "⚡",
+              "fontFamily": "Inter",
+              "fontSize": 32,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "qvwUX",
+          "name": "信息栏",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#FFFFFF",
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000010",
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "blur": 8
+          },
+          "gap": 12,
+          "padding": [
+            16,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "OvU6X",
+              "name": "目标提示",
+              "fill": "#F4F4F5",
+              "cornerRadius": 20,
+              "gap": 8,
+              "padding": [
+                10,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jwYjr",
+                  "name": "目标图标",
+                  "fill": "#18181B",
+                  "content": "🎯",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "r14z9",
+                  "name": "目标文字",
+                  "fill": "#18181B",
+                  "content": "请找到: 苹果",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 16,
+                  "fontWeight": "semibold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QYBtf",
+              "name": "连击显示",
+              "fill": "#FF9800",
+              "cornerRadius": 20,
+              "gap": 6,
+              "padding": [
+                8,
+                14
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "3tDvq",
+                  "name": "连击图标",
+                  "fill": "#FFFFFF",
+                  "content": "🔥",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "D9vGZ",
+                  "name": "连击数",
+                  "fill": "#FFFFFF",
+                  "content": "x3",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "vdTOm",
+              "name": "计时器",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "8h2SK",
+                  "name": "计时图标",
+                  "fill": "#18181B",
+                  "content": "⏱️",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "N6Xfr",
+                  "name": "时间",
+                  "fill": "#14B8A6",
+                  "content": "00:45",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wA4GJ",
+          "name": "字母矩阵区域",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            16,
+            16,
+            24,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "v9agn",
+              "name": "字母网格",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Dy7tr",
+                  "name": "第1行",
+                  "width": "fill_container",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dxzmN",
+                      "name": "格子A",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "#FF6B6B",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "S2vGq",
+                          "name": "字母A",
+                          "fill": "#FFFFFF",
+                          "content": "A",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "L555j",
+                      "name": "格子B",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "#4ECDC4",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lOUyZ",
+                          "name": "字母B",
+                          "fill": "#FFFFFF",
+                          "content": "B",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bmvgP",
+                      "name": "格子C",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "#95E1D3",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "8050v",
+                          "name": "字母C",
+                          "fill": "#FFFFFF",
+                          "content": "C",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "a39aM",
+                      "name": "格子D",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "#FFE66D",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "fMfVT",
+                          "name": "字母D",
+                          "fill": "#18181B",
+                          "content": "D",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "iQmeJ",
+                      "name": "格子E",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "#DDA0DD",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "g4sZ8",
+                          "name": "字母E",
+                          "fill": "#FFFFFF",
+                          "content": "E",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KtH56",
+                      "name": "格子F",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "#FFB347",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CkoiX",
+                          "name": "字母F",
+                          "fill": "#FFFFFF",
+                          "content": "F",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pHfic",
+                  "name": "第2行",
+                  "width": "fill_container",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Wmukn",
+                      "name": "格子G",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "#87CEEB",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "SgzBM",
+                          "name": "字母G",
+                          "fill": "#FFFFFF",
+                          "content": "G",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RDuRU",
+                      "name": "格子H",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "#F0E68C",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "5hB9h",
+                          "name": "字母H",
+                          "fill": "#18181B",
+                          "content": "H",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HFw4P",
+                      "name": "格子I",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "#FFB6C1",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Qxiqf",
+                          "name": "字母I",
+                          "fill": "#FFFFFF",
+                          "content": "I",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zjdFQ",
+                      "name": "格子J",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "#98FB98",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "LRMhC",
+                          "name": "字母J",
+                          "fill": "#18181B",
+                          "content": "J",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "quLVE",
+                      "name": "格子K",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "#DDA0DD",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "iOXey",
+                          "name": "字母K",
+                          "fill": "#FFFFFF",
+                          "content": "K",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XXpji",
+                      "name": "格子L",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "#FF6B6B",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EyYmj",
+                          "name": "字母L",
+                          "fill": "#FFFFFF",
+                          "content": "L",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "1x2mz",
+              "name": "底部按钮行",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ewf2T",
+                  "name": "提示按钮",
+                  "fill": "#FFD700",
+                  "cornerRadius": 20,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#FFD70080",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "gap": 6,
+                  "padding": [
+                    10,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "M55v3",
+                      "name": "提示图标",
+                      "fill": "#18181B",
+                      "content": "💡",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "5y53W",
+                      "name": "提示文字",
+                      "fill": "#18181B",
+                      "content": "提示",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "AuwZG",
+                  "name": "Buff按钮",
+                  "opacity": 0.3,
+                  "fill": "#E4E4E780",
+                  "cornerRadius": 20,
+                  "gap": 6,
+                  "padding": [
+                    10,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tXcz4",
+                      "name": "Buff图标",
+                      "fill": "#18181B",
+                      "content": "🎁",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "eUklF",
+                      "name": "Buff文字",
+                      "fill": "#71717A",
+                      "content": "爸爸的Buff",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "medium"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AuGcg",
+              "name": "控制按钮行",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "B0mMG",
+                  "name": "跳过按钮",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "#E4E4E7",
+                  "cornerRadius": 24,
+                  "gap": 6,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PgvH2",
+                      "name": "跳过图标",
+                      "fill": "#71717A",
+                      "content": "⏭️",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KEnUG",
+                      "name": "跳过文字",
+                      "fill": "#71717A",
+                      "content": "跳过",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "brv08",
+                  "name": "重新开始按钮",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "#F472B6",
+                  "cornerRadius": 24,
+                  "gap": 6,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SkcLd",
+                      "name": "重试图标",
+                      "fill": "#FFFFFF",
+                      "content": "🔄",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "X56P7",
+                      "name": "重试文字",
+                      "fill": "#FFFFFF",
+                      "content": "重新开始",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "GMiHE",
+      "x": 900,
+      "y": 0,
+      "name": "胜利结算界面",
+      "clip": true,
+      "width": 402,
+      "height": 874,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "dRTOU",
+          "name": "胜利标题",
+          "clip": true,
+          "width": "fill_container",
+          "height": 150,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#1A237E",
+                "position": 0
+              },
+              {
+                "color": "#3949AB",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            40,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "3hSOe",
+              "name": "胜利标题",
+              "fill": "#FFD700",
+              "content": "🎉 胜利! 🎉",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 36,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "joBYa",
+              "name": "副标题",
+              "fill": "#FFFFFF",
+              "content": "怪兽被打败了!",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 16,
+              "fontWeight": "semibold"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "IZJXU",
+          "name": "宝箱区域",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            40,
+            24,
+            32,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "EHMtG",
+              "name": "宝箱",
+              "width": 160,
+              "height": 160,
+              "fill": "#8D6E63",
+              "cornerRadius": 24,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000030",
+                "offset": {
+                  "x": 0,
+                  "y": 8
+                },
+                "blur": 24
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vOyWb",
+                  "name": "宝箱emoji",
+                  "fill": "#FFD700",
+                  "content": "📦",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 80,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "EqKbG",
+              "name": "提示文字",
+              "fill": "#8B5CF6",
+              "content": "点击宝箱开启奖励!",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 16,
+              "fontWeight": "semibold"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "m2xP5",
+          "name": "奖励区域",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            0,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "Bavxq",
+              "name": "奖励标题",
+              "fill": "#18181B",
+              "content": "⭐⭐⭐ 获得的卡片",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 20,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "w7mt2",
+              "name": "卡片行",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kHB9N",
+                  "name": "苹果卡片",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000015",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 12
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "24eNq",
+                      "name": "苹果图标",
+                      "fill": "#18181B",
+                      "content": "🍎",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "7lkL9",
+                      "name": "英文",
+                      "fill": "#18181B",
+                      "content": "Apple",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GO1tT",
+                      "name": "中文",
+                      "fill": "#71717A",
+                      "content": "苹果",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "medium"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NR849",
+                  "name": "狗卡片",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000015",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 12
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "oiAJS",
+                      "name": "狗图标",
+                      "fill": "#18181B",
+                      "content": "🐶",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UnSX8",
+                      "name": "英文",
+                      "fill": "#18181B",
+                      "content": "Dog",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "M14iM",
+                      "name": "中文",
+                      "fill": "#71717A",
+                      "content": "狗",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "medium"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "1TZfC",
+              "name": "继续按钮",
+              "width": "fill_container",
+              "height": 64,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#FFD700",
+                    "position": 0
+                  },
+                  {
+                    "color": "#FF6F00",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 32,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#FFD70060",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 16
+              },
+              "gap": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "PPKjN",
+                  "name": "继续文字",
+                  "fill": "#FFFFFF",
+                  "content": "▶️ 继续挑战",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 20,
+                  "fontWeight": "bold"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "SaKgs",
+      "x": 1350,
+      "y": 0,
+      "name": "图鉴界面",
+      "clip": true,
+      "width": 402,
+      "height": 874,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "8nyu6",
+          "name": "图鉴标题",
+          "clip": true,
+          "width": "fill_container",
+          "height": 100,
+          "fill": "#8B5CF6",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            40,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "gp7VY",
+              "name": "图鉴标题",
+              "fill": "#FFFFFF",
+              "content": "📚 单词图鉴",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 28,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "2ayje",
+              "name": "统计信息",
+              "fill": "#FFFFFFB3",
+              "content": "已收集: 12/50  |  完成度: 24%",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 14,
+              "fontWeight": "medium"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "PDXo3",
+          "name": "过滤器行",
+          "width": "fill_container",
+          "gap": 12,
+          "padding": [
+            16,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "i7fqJ",
+              "name": "分类按钮",
+              "fill": "#F4F4F5",
+              "cornerRadius": 20,
+              "gap": 6,
+              "padding": [
+                10,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kZDwE",
+                  "name": "分类图标",
+                  "fill": "#18181B",
+                  "content": "📂",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "FSL1h",
+                  "name": "分类文字",
+                  "fill": "#18181B",
+                  "content": "全部 ▼",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "s1Wfn",
+              "name": "搜索框",
+              "width": "fill_container",
+              "height": 44,
+              "fill": "#F4F4F5",
+              "cornerRadius": 22,
+              "gap": 8,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "IXDJd",
+                  "name": "搜索图标",
+                  "fill": "#A1A1AA",
+                  "content": "🔍",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Cvvj7",
+                  "name": "搜索占位符",
+                  "fill": "#A1A1AA",
+                  "content": "搜索单词...",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 15,
+                  "fontWeight": "medium"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "T729b",
+          "name": "卡片网格",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            0,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "2JrsK",
+              "name": "网格行1",
+              "width": "fill_container",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "m0s6x",
+                  "name": "苹果卡片",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000010",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "0vHXg",
+                      "name": "图标",
+                      "fill": "#18181B",
+                      "content": "🍎",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 36,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "rKpeh",
+                      "name": "中文",
+                      "fill": "#18181B",
+                      "content": "苹果",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EULdp",
+                      "name": "英文",
+                      "fill": "#71717A",
+                      "content": "Apple",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "medium"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "0aGzI",
+                  "name": "狗卡片",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000010",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EX28s",
+                      "name": "图标",
+                      "fill": "#18181B",
+                      "content": "🐶",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 36,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "lYsK6",
+                      "name": "中文",
+                      "fill": "#18181B",
+                      "content": "狗",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "E7L3w",
+                      "name": "英文",
+                      "fill": "#71717A",
+                      "content": "Dog",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "medium"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "rT3EJ",
+                  "name": "猫卡片",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000010",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "1Zaeu",
+                      "name": "图标",
+                      "fill": "#18181B",
+                      "content": "🐱",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 36,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Tva3R",
+                      "name": "中文",
+                      "fill": "#18181B",
+                      "content": "猫",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ouhjO",
+                      "name": "英文",
+                      "fill": "#71717A",
+                      "content": "Cat",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "medium"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Pm5Er",
+              "name": "网格行2",
+              "width": "fill_container",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "3VSgl",
+                  "name": "鸟卡片",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000010",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "8YaY8",
+                      "name": "图标",
+                      "fill": "#18181B",
+                      "content": "🐦",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 36,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dCo3X",
+                      "name": "中文",
+                      "fill": "#18181B",
+                      "content": "鸟",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "2bm7g",
+                      "name": "英文",
+                      "fill": "#71717A",
+                      "content": "Bird",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "medium"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vPggi",
+                  "name": "未解锁卡片",
+                  "width": "fill_container",
+                  "fill": "#F4F4F5",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000010",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UElCc",
+                      "name": "问号图标",
+                      "fill": "#A1A1AA",
+                      "content": "❓",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 36,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ACjmt",
+                      "name": "未解锁",
+                      "fill": "#A1A1AA",
+                      "content": "???",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YsMOs",
+                      "name": "提示",
+                      "fill": "#D4D4D8",
+                      "content": "未解锁",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "medium"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "x4q3h",
+                  "name": "彩虹卡片",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000010",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fiPOD",
+                      "name": "图标",
+                      "fill": "#18181B",
+                      "content": "🌈",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 36,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "I0ZgP",
+                      "name": "中文",
+                      "fill": "#18181B",
+                      "content": "彩虹",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "4YBVl",
+                      "name": "英文",
+                      "fill": "#71717A",
+                      "content": "Rainbow",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "medium"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KVUrX",
+          "name": "成就区域",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            24,
+            24,
+            32,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "U199e",
+              "name": "成就标题",
+              "fill": "#18181B",
+              "content": "🏆 我的成就",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 18,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "0uUEG",
+              "name": "成就徽章行",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "g1XGV",
+                  "name": "初级学者徽章",
+                  "width": "fill_container",
+                  "fill": "#FFF9E6",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#FFD70040",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DH5gx",
+                      "name": "徽章图标",
+                      "fill": "#18181B",
+                      "content": "🌟",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 32,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZMn58",
+                      "name": "徽章标题",
+                      "fill": "#18181B",
+                      "content": "初级学者",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "voNSy",
+                      "name": "徽章描述",
+                      "fill": "#71717A",
+                      "content": "收集10个单词",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 10,
+                      "fontWeight": "medium"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uUt4b",
+                  "name": "单词达人徽章",
+                  "width": "fill_container",
+                  "fill": "#E8F5E9",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#4CAF5040",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "akvQP",
+                      "name": "徽章图标",
+                      "fill": "#18181B",
+                      "content": "📚",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 32,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UJH4Z",
+                      "name": "徽章标题",
+                      "fill": "#18181B",
+                      "content": "单词达人",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "y2lKV",
+                      "name": "徽章描述",
+                      "fill": "#71717A",
+                      "content": "收集50个单词",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 10,
+                      "fontWeight": "medium"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RydMp",
+                  "name": "连击大师徽章",
+                  "width": "fill_container",
+                  "fill": "#F3E5F5",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#9C27B040",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vKaio",
+                      "name": "徽章图标",
+                      "fill": "#18181B",
+                      "content": "🔥",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 32,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "TAlfr",
+                      "name": "徽章标题",
+                      "fill": "#18181B",
+                      "content": "连击大师",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "V08Pv",
+                      "name": "徽章描述",
+                      "fill": "#71717A",
+                      "content": "达到5连击",
+                      "textAlign": "center",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 10,
+                      "fontWeight": "medium"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "iEVKm",
+              "name": "统计卡片",
+              "width": "fill_container",
+              "fill": "#8B5CF6",
+              "cornerRadius": 20,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#8B5CF640",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 16
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "94lbv",
+                  "name": "统计标题",
+                  "fill": "#FFFFFF",
+                  "content": "📊 学习统计",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "WKN6q",
+                  "name": "统计行",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "A45Xu",
+                      "name": "学习时长",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "4dj1f",
+                          "name": "时长数值",
+                          "fill": "#FFFFFF",
+                          "content": "2.5小时",
+                          "textAlign": "center",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dYPXW",
+                          "name": "时长标签",
+                          "fill": "#FFFFFFB3",
+                          "content": "学习时长",
+                          "textAlign": "center",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 11,
+                          "fontWeight": "medium"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "2jyoK",
+                      "name": "掌握单词",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QIuK4",
+                          "name": "单词数值",
+                          "fill": "#FFFFFF",
+                          "content": "12个",
+                          "textAlign": "center",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "9Hdf3",
+                          "name": "单词标签",
+                          "fill": "#FFFFFFB3",
+                          "content": "掌握单词",
+                          "textAlign": "center",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 11,
+                          "fontWeight": "medium"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "6y1LN",
+                      "name": "最高连击",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "J8tCL",
+                          "name": "连击数值",
+                          "fill": "#FFFFFF",
+                          "content": "x8",
+                          "textAlign": "center",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kreib",
+                          "name": "连击标签",
+                          "fill": "#FFFFFFB3",
+                          "content": "最高连击",
+                          "textAlign": "center",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 11,
+                          "fontWeight": "medium"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Dz0Te",
+              "name": "进度区域",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bunkw",
+                  "name": "进度标签",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "FbDT2",
+                      "name": "进度文字",
+                      "fill": "#18181B",
+                      "content": "总进度",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "utyoc",
+                      "name": "百分比",
+                      "fill": "#8B5CF6",
+                      "content": "24%",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "3nsbX",
+                  "name": "进度条容器",
+                  "width": "fill_container",
+                  "height": 12,
+                  "fill": "#F4F4F5",
+                  "cornerRadius": 6,
+                  "padding": 2,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "P9cct",
+                      "name": "进度条填充",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#8B5CF6",
+                      "cornerRadius": 4
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
